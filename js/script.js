@@ -1,5 +1,5 @@
 let i = 0;
-const text = ["","I build websites,", "mostly trash."];
+const text = ["","I build websites,", " Mostly trash." ];
 const typewriter = document.getElementById('typewriter');
 
 function typeWriter() {
@@ -8,17 +8,21 @@ function typeWriter() {
         i++;
         setTimeout(() => {
             typewriter.innerHTML += `<span class="smaller-text"></span>`;
-            typeNextPart();
-        }, 1000);
+            typeNextPart(1);
+        }, 500);
+        setTimeout(() => {
+            typewriter.innerHTML += `<span class="smaller-text"></span>`;
+            typeNextPart(2);
+        }, 2000);
     }
 }
 
-function typeNextPart() {
+function typeNextPart(a) {
     let j = 0;
     function type() {
-        if (j < text[1].length) {
+        if (j < text[a].length) {
             const smallerText = typewriter.querySelector('.smaller-text');
-            smallerText.textContent += text[1].charAt(j);
+            smallerText.textContent += text[a].charAt(j);
             j++;
             setTimeout(type, 50);
         }
@@ -33,3 +37,13 @@ function scrollToContent() {
 
 // Start the typewriter effect when page loads
 window.onload = typeWriter;
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
