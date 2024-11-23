@@ -1,5 +1,5 @@
 let i = 0;
-const text = ["","I build websites, mostly trash."];
+const text = ["","I build websites,", "mostly trash."];
 const typewriter = document.getElementById('typewriter');
 
 function typeWriter() {
