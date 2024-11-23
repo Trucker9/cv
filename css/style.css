@@ -4,24 +4,83 @@
 **/
 body {
     font-family: 'Noto Sans', sans-serif;
+    background-color: #393e46;
     padding: 40px 0px;
-    color: #3d3d3f;
+    color: #f7f7f7;
+}
+* {
+    box-sizing: border-box;
+}
+
+.landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.typewriter {
+    overflow: hidden;
+    white-space: pre-line;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    border-right: 0.15em solid white;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+}
+
+.scroll-btn {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+
+}
+.scroll-btn span{
+    font-size: 12px;
+    display: block;
+    opacity: 50%;
+}
+
+.scroll-btn:hover {
+    background: #f8b500;
+    color: black;
+}
+
+/* Adding a second section to scroll to */
+.content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
 }
 
 main {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #5c636e;
+    border: 1px solid #393e46;
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
 }
 
 a, a:hover {
-    color: #64b2b6;
+    color: #f8b500;
 }
 
 h2 {
     font-size: 20px;
     font-weight: 500;
-    color: #64b2b6;
+    color: #f8b500;
 }
 
 .left-side {
@@ -50,14 +109,14 @@ h2 {
 .btn-cv {
     padding: 10px;
     color: white;
-    background-color: #71c9ce;
+    background-color: #f8b500;
     width: 100%;
     border-radius: 0px;
 }
 
 .btn-cv:hover {
     color: #fff;
-    background-color: #64b2b6;
+    background-color: #f8b500;
 }
 
 .btn:focus, .btn:active {
@@ -81,7 +140,7 @@ h2 {
 
 section {
     padding: 40px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #393e46;
 }
 
 .section-title {
@@ -94,7 +153,7 @@ section {
 }
 
 .company, .school-name{
-    color: #71c9ce;
+    color: #f8b500;
     font-size: 15px;
     font-weight: 500;
     margin-bottom: 0px;
@@ -103,7 +162,8 @@ section {
 .time {
     font-size: 15px;
     font-weight: 500;
-    color: #71c9ce;
+    color: #f8b500;
+    letter-spacing: -1px;
 }
 
 .job-title, .school-title {
@@ -116,8 +176,12 @@ section {
     font-size: 15px;
 }
 
+.job p {
+    margin-left: 32px;
+}
+
 .honors h3{
-    color: #71c9ce;
+    color: #f8b500;
     font-size: 15px;
     font-weight: 500;
     margin-bottom: 0px;
@@ -129,13 +193,13 @@ section {
 
 .form-group input, .form-group textarea {
     border-radius: 0px;
-    border-color: #ddd;
+    border-color: #393e46;
 }
 
 .form-control:focus {
     box-shadow: none;
     border-radius: 0px;
-    border-color: #ddd;
+    border-color: #393e46;
 }
 
 footer {
@@ -145,13 +209,13 @@ footer {
 
 @media (max-width: 991.98px) {
     .right-side {
-        border-top: 1px solid #ddd;
+        border-top: 1px solid #393e46;
     }
 }
 
 @media (min-width: 992px) {
     .left-side {
-        border-right: 1px solid #ddd;
+        border-right: 1px solid #393e46;
     }
 
     .time {
