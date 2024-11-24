@@ -36,7 +36,7 @@ function scrollToContent() {
 }
 
 // Start the typewriter effect when page loads
-window.onload = typeWriter;
+typeWriter()
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
