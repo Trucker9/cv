@@ -165,7 +165,7 @@
                     to graph and table packages used in stock market projects.
                   </li>
                   <li>
-                    Implemented a monorepo design system for all React
+                    Implemented a monorepo & atomic design system for all React
                     applications to ensure consistency across company projects.
                     Used npm/changesets to version the UI packages and publish
                     them to GitLab for use by other developers.
@@ -175,23 +175,33 @@
                     implementing a custom RUM (Real User Monitoring) system that
                     tracked client-side errors and stored them in MongoDB.
                     Discovered that some chart libraries were failing under
-                    heavy load inputted but stock exchange core.
+                    heavy load inputted by stock exchange core.
                   </li>
                   <li>
                     Solely designed and developed PishrunFund end-to-end
-                    investment platforms using Next.js 13 & 14, handling both
-                    frontend and backend. Stored backend data in MongoDB, cached
-                    frequently requested charts in Redis, and used MinIO for
-                    user file uploads. Containerized the entire application with
-                    Docker to enable single-command deployment in CI using
-                    GitLab’s DID method.
+                    investment platforms using Next.js 14, handling both
+                    frontend and backend. Used MongoDB, cached frequently
+                    requested charts in Redis, and used MinIO for user file
+                    uploads. Containerized the entire application with Docker to
+                    enable single-command deployment in CI using GitLab’s DID
+                    method.
                   </li>
                   <li>
-                    Reduced friction between developers and stakeholders—who
-                    were not technical—by suggesting and implementing SDD
-                    (Server-Driven Design) in the MyPishro project. This allowed
-                    the system admin to change homepage sections based on the
-                    current state of the stock market.
+                    Solely Designed and developed the PishroBroker company
+                    website using Next.js 13's new App Router shortly after its
+                    release. Implemented SSG for news pages, RSC and Server
+                    Actions and Mutations for interactive pages and sign-up
+                    functionality, ISR for stock tables and chart updates, and
+                    SSG for static pages such as company branches.
+                  </li>
+                  <li>
+                    Reduced friction between developers and non-technical
+                    stakeholders by implementing Server-Driven Design (SDD) in
+                    the MyPishro project. Stakeholders could update website
+                    sections via a simple dashboard connected to a NestJS
+                    backend, which returned JSON indicating which atomic design
+                    molecule to render. The system was scalable across all
+                    company projects thanks to a shared monorepo design system.
                   </li>
                   <li>
                     Maintained a real-time trading platform built with Vue 3 for
@@ -230,9 +240,8 @@
                 <div class="job-title">Front-End Developer</div>
                 <ul>
                   <li>
-                    Worked on a 10-year-old legacy project, replacing a
-                    no-framework front end with Vue 3 in a PHP Laravel
-                    environment.
+                    Worked on a 10-year-old legacy project, replacing a vanilla
+                    JS front-end with Vue 3 in a PHP Laravel environment.
                   </li>
 
                   <li>
@@ -281,7 +290,7 @@
               </div>
             </section>
 
-            <section>
+            <!-- <section>
               <h2 class="section-title">
                 <span class="fa-stack fa-xs">
                   <i class="fas fa-circle fa-stack-2x"></i>
@@ -294,14 +303,6 @@
                 <div>
                   <strong>Fluent in:</strong>
                   <ul>
-                    <li>Next.js (SSR, ISR, SSG, RSC, App Router)</li>
-
-                    <li>Memoization and Caching</li>
-
-                    <li>
-                      Performance & CRP Optimization (Lighthouse, FCP, LCP, TTI,
-                      CLS, Tree Shaking, Code Splitting)
-                    </li>
                     <li>TypeScript</li>
                   </ul>
                 </div>
@@ -317,17 +318,6 @@
                 <div>
                   <strong>Skilled in:</strong>
                   <ul>
-                    <li>Vue 3</li>
-                    <li>WebSockets, SSE</li>
-                    <li>
-                      Advanced state management (Redux Thunk, Jotai, Pinia)
-                    </li>
-                    <li>Advanced Testing (Jest, Playwright, Vitest)</li>
-
-                    <li>
-                      PWA (Service Workers, Web App Manifest, Offline Caching)
-                    </li>
-                    <li>Analytics & Monitoring (APM, Sentry, Kafka)</li>
                     <li>Animations & UX (Framer Motion, GSAP)</li>
                   </ul>
                 </div>
@@ -342,19 +332,7 @@
               <div class="skill">
                 <div>
                   <strong>Exposed to:</strong>
-                  <ul>
-                    <li>Node.js, Express, NestJS</li>
-                    <li>MongoDB, Redis, PostgreSQL, MySQL</li>
-                    <li>Docker, , CI/CD Pipelines (GitLab CI)</li>
-
-                    <li>
-                      Front-End Security (XSS Prevention, CSRF Protection, CSP)
-                    </li>
-                    <li>
-                      Cross-Platform Development (Capacitor, Ionic, Electron,
-                      Tauri, React Native)
-                    </li>
-                  </ul>
+                  <ul></ul>
                 </div>
                 <div
                   role="progressbar"
@@ -369,12 +347,6 @@
                   <strong>Familiar with:</strong>
                   <ul>
                     <li>PostgreSQL, Elasticsearch, RabbitMQ</li>
-                    <li>
-                      Microservices, Event-Driven Architecture, Serverless,
-                      Domain Driven Design.
-                    </li>
-
-                    <li>Kubernetes, Helm, GitOps, Docker Swarm</li>
                   </ul>
                 </div>
                 <div
@@ -384,7 +356,7 @@
                   style="--value: 25"
                 ></div>
               </div>
-            </section>
+            </section> -->
             <section>
               <h2 class="section-title">
                 <span class="fa-stack fa-xs">
@@ -561,31 +533,19 @@
             </section>
           </article>
           <footer>
-            <!-- DO NOT CHANGE THIS -->
-            <small class="copyright">
+            <small>
               <a href="https://github.com/trucker9/cv" target="_blank">
                 Ali Moshkinfaam's CV</a
               >
-              | Made with 🍆🍆🍆 by Me!
+              | Made with 🍆 by Me!
             </small>
           </footer>
         </div>
       </div>
     </main>
 
-    <!-- Optional JavaScript -->
     <script src="js/script.js" type="text/javascript"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
+
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
