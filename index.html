@@ -40,9 +40,7 @@
       <h2 style="font-size: 72px">Hi,</h2>
       <div class="typewriter" id="typewriter"></div>
       <button class="scroll-btn" onclick="scrollToContent()">
-        CV / Resume / Portfolio / رزومه / چکیده<span
-          >or whatever <i>the fuck</i> you call it :)
-        </span>
+        CV / Resume
       </button>
     </section>
     <main class="container">
@@ -58,7 +56,7 @@
                             <i class="fas fa-file-alt"></i> Download Résumé
                         </a> -->
               <h1>Ali Moshkinfaam</h1>
-              <span>Full-Stack Software Developer</span>
+              <span> Software Developer</span>
             </div>
             <ul class="social">
               <li>
@@ -95,47 +93,57 @@
               <div class="job">
                 <div class="upper-row">
                   <h3 class="company">Snapp! Market</h3>
-                  <div class="time">09/1403 – Present (Dec 2024 – Present)</div>
+                  <div class="time">03/1403 – Present | ~ 1yr</div>
                 </div>
                 <div class="job-title">Front-End Engineer</div>
                 <ul>
                   <li>
-                    Worked in Snapp!Market <strong>Front-End Chapter</strong>.
+                    Increased Lighthouse Score by ~25 with practices like
+                    extracting and adding critical CSS to index.html (INP/FID),
+                    creating styled component CSS files at build time,
+                    customizing chunk sizes in Webpack & Rspack, and lazy
+                    loading all components via a loadable utility (TBT).
                   </li>
                   <li>
-                    <strong>Increased Lighthouse Score</strong> by optimizing
-                    build and switching between <strong>Webpack</strong>,
-                    <strong>Vite</strong>, and <strong>Rspack</strong> to
-                    maximize performance and Web vitals.
+                    Added SSR in React As requested by the Marketing team, for
+                    certain pages for the Googlebot user agent to optimize SEO.
+                    This involved fetching data on the server and then hydrating
+                    the Redux store on the client.
                   </li>
                   <li>
-                    Implemented <strong>SSR in React</strong> for Googlebot by
-                    calling APIs server-side, storing data in
-                    <strong>Redux</strong>, and
-                    <strong>hydrating the client</strong> on load.
+                    Used event-driven architecture to design a listener
+                    component for dispatched custom events, sending them to
+                    Elastic APM-RUM during browser idle time. This reduced
+                    clutter in the React code, utilized idle time, and freed up
+                    the main thread.
                   </li>
                   <li>
-                    <strong>Designed</strong> a clean, scalable structure for
-                    sending <strong>Kafka events</strong> to keep codebase
-                    organized and maintainable.
+                    Improved the crash-free rate by 0.8% (from 99.1% to 99.9%)
+                    by replacing Elastic APM-RUM with Sentry and configuring it
+                    to send alerts to the team when an issue regresses in
+                    different builds.
                   </li>
                   <li>
-                    Added <strong>Sentry</strong> for advanced error monitoring
-                    and <strong>99.9% crash free rate</strong>.
+                    Implemented Continuous Testing by collaborating with a
+                    professional test engineer to extract user actions, create
+                    test scenarios by applying actions in sequence, covering
+                    edge cases, and creating an E2E testing project using
+                    Playwright. This project was then deployed to run after each
+                    build in the CI to check the release for potential bugs.
                   </li>
                   <li>
-                    Collaborated with a professional test engineer to
-                    <strong>extract test scenarios</strong>, implemented
-                    <strong>end-to-end tests using Playwright</strong>, and
-                    deployed them for integration into the
-                    <strong>CI/CD pipeline</strong> before each deployment.
+                    Used the Design for Manufacturability (DFM) principle to
+                    communicate with designers in order to stay aligned and
+                    deliver a suitable design system that can be used by other
+                    developers.
                   </li>
+
                   <li>
-                    Participated in meetings and engaged in
-                    <strong
-                      >discussions with designers and product managers</strong
-                    >
-                    regarding project goals.
+                    Utilized Orval to organize API data and reduced optional
+                    chaining in the code by collecting Swagger documentation,
+                    even for old APIs, from backend developers and organizing
+                    them for input into Orval to generate fully-typed React
+                    Query hooks as output.
                   </li>
                 </ul>
               </div>
@@ -143,46 +151,71 @@
               <div class="job">
                 <div class="upper-row">
                   <h3 class="company">Pishro Broker</h3>
-                  <div class="time">
-                    04/1402 – 08/1403 (Jun 2023 – Nov 2024) | 1 yr 5 mo
-                  </div>
+                  <div class="time">09/1400 – 03/1403 | 2 yr 5 mo</div>
                 </div>
                 <div class="job-title">Front-End Engineer</div>
                 <ul>
                   <li>
-                    <strong>Increased applications speed </strong> by applying
-                    memoization & caching to all platforms.
+                    Increased MyPishro platform UX by: 1. Finding extra
+                    re-renders using React DevTools and then using memoization
+                    techniques and the useCallback hook to massively reduce the
+                    number of re-renders in large stock market tables and
+                    charts. 2. Uploading JS assets to MinIO and splitting large
+                    chunks into smaller ones, as the bundle size was too big due
+                    to graph and table packages used in stock market projects.
                   </li>
                   <li>
-                    Implemented a <strong>design system</strong> for all React
-                    applications within a
-                    <strong>mono repo, publishing packages</strong> to the
-                    company’s GitLab for <strong>centralized use.</strong>
+                    Implemented a monorepo design system for all React
+                    applications to ensure consistency across company projects.
+                    Used npm/changesets to version the UI packages and publish
+                    them to GitLab for use by other developers.
                   </li>
                   <li>
-                    <strong>Solely</strong> designed and developed two
-                    <strong>end-to-end</strong> investment platforms using
-                    <strong>Next.js 13 & 14</strong>, handling both frontend and
-                    backend with <strong>MongoDB, Redis, and MinIO</strong> for
-                    storage and caching.
-                  </li>
-
-                  <li>
-                    contributed to building a fast
-                    <strong>real-time trading platform</strong> with
-                    <strong>Vue 3,</strong> integrating the stock exchange core
-                    system legacy and live <strong>WebSocket APIs</strong>, as
-                    the company’s most critical project.
+                    Found the cause of 1000 unexpected user exits by
+                    implementing a custom RUM (Real User Monitoring) system that
+                    tracked client-side errors and stored them in MongoDB.
+                    Discovered that some chart libraries were failing under
+                    heavy load inputted but stock exchange core.
                   </li>
                   <li>
-                    Added <strong>service worker & caching </strong> for PWA
-                    support, and used <strong>Ionic with Capacitor </strong>to
-                    generate Android (APK) and iOS (IPA) builds.
+                    Solely designed and developed PishrunFund end-to-end
+                    investment platforms using Next.js 13 & 14, handling both
+                    frontend and backend. Stored backend data in MongoDB, cached
+                    frequently requested charts in Redis, and used MinIO for
+                    user file uploads. Containerized the entire application with
+                    Docker to enable single-command deployment in CI using
+                    GitLab’s DID method.
                   </li>
                   <li>
-                    Revamped a <strong>legacy buggy React app</strong> by
-                    implementing <strong>Jotai,</strong> cleaning the code, and
-                    defining <strong>code conventions.</strong>
+                    Reduced friction between developers and stakeholders—who
+                    were not technical—by suggesting and implementing SDD
+                    (Server-Driven Design) in the MyPishro project. This allowed
+                    the system admin to change homepage sections based on the
+                    current state of the stock market.
+                  </li>
+                  <li>
+                    Maintained a real-time trading platform built with Vue 3 for
+                    enhanced performance. Integrated the legacy stock exchange
+                    core system and live data using LightstreamerJS, updated
+                    stock prices via WebSocket, enabled buy/sell orders, and
+                    used Framer Motion to enhance UX with smooth animations.
+                  </li>
+                  <li>
+                    Added service worker and caching using Workbox for PWA
+                    offline support. Used Ionic and Capacitor to generate
+                    Android (APK) and iOS (IPA) builds, enabling users to access
+                    app analytics features without an internet connection.
+                  </li>
+                  <li>
+                    Replaced the state management store of the Optionz platform
+                    with Jotai, as the previous implementation was bloated with
+                    bad code and bugs that made the app unusable.
+                  </li>
+                  <li>
+                    Defined a coding convention with the help of other
+                    developers and Airbnb’s code style guide. Created ESLint and
+                    Stylelint configurations, along with an EditorConfig file,
+                    to ensure all company projects follow consistent rules.
                   </li>
                 </ul>
               </div>
@@ -197,38 +230,32 @@
                 <div class="job-title">Front-End Developer</div>
                 <ul>
                   <li>
-                    Migrated a 10-year-old PHP Yii2 codebase with minimal
-                    frontend to a <strong> modern Vue 3 frontend</strong> within
-                    a Laravel backend.
+                    Worked on a 10-year-old legacy project, replacing a
+                    no-framework front end with Vue 3 in a PHP Laravel
+                    environment.
                   </li>
 
                   <li>
-                    Worked on legacy PHP projects
-                    <strong>without frontend frameworks</strong>, deepening my
-                    understanding of <strong>JS core</strong> and reinforcing
-                    <strong>foundational skills</strong>.
+                    Improved and maintained the front end of a legacy PHP
+                    project with no framework, enhancing my core JavaScript and
+                    development skills to implement new features.
                   </li>
-                  <li>
-                    Established coding conventions and integrated linters to
-                    ensure clean, <strong>maintainable code</strong> in a large
-                    codebase <strong>managed by many junior developers</strong>.
-                  </li>
-                </ul>
-              </div>
 
-              <div class="job">
-                <div class="upper-row">
-                  <h3 class="company">Freelance</h3>
-                  <div class="time">
-                    08/1398 – 01/1400 (Oct 2019 – Mar 2021) | 1 yr 5 mo
-                  </div>
-                </div>
-                <div class="job-title">Front-End Developer</div>
-                <ul>
-                  <li>Learned React & NextJS</li>
                   <li>
-                    Learned React and Next.js and completed multiple freelance
-                    projects for university professors and clients.
+                    Implemented a customer support chat app without using any
+                    JavaScript frameworks, handling voice messages and images
+                    using vanilla JS and object-oriented programming.
+                  </li>
+
+                  <li>
+                    Migrated an old CRM/ORM platform from a minimal front end
+                    (built with PHP Yii2) to a full React project. Used Material
+                    UI and atomic design for faster development.
+                  </li>
+
+                  <li>
+                    Improved my JavaScript skills beyond the company's tech
+                    stack during my free time.
                   </li>
                 </ul>
               </div>
@@ -243,8 +270,12 @@
                 <div class="job-title">Front-End Intern</div>
                 <ul>
                   <li>
-                    Learned fundamentals of <strong>HTML, CSS, JS</strong>, and
-                    <strong>UI development</strong>
+                    Learned fundamentals of HTML, CSS, JS, and UI development
+                  </li>
+                  <li>Learned React</li>
+                  <li>
+                    Learned React and Next.js and contributed to back office
+                    react project.
                   </li>
                 </ul>
               </div>
