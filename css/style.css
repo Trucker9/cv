@@ -145,6 +145,9 @@ h2 {
   padding: 0;
   list-style-type: none;
 }
+.social .mobile {
+  display: none;
+}
 
 .social i {
   width: 20px;
