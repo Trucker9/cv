@@ -1,61 +1,67 @@
 let i = 0;
-const text = ["","I build websites,", " Mostly trash." ];
-const typewriter = document.getElementById('typewriter');
+const text = ["", "I build websites,", " Mostly trash."];
+const typewriter = document.getElementById("typewriter");
 
 function typeWriter() {
-    if (i === 0) {
-        typewriter.innerHTML = `<span class="big-hi">${text[0]}</span>`;
-        i++;
-        setTimeout(() => {
-            typewriter.innerHTML += `<span class="smaller-text"></span>`;
-            typeNextPart(1);
-        }, 500);
-        setTimeout(() => {
-            typewriter.innerHTML += `<span class="smaller-text"></span>`;
-            typeNextPart(2);
-        }, 2000);
-    }
+  if (i === 0) {
+    typewriter.innerHTML = `<span class="big-hi">${text[0]}</span>`;
+    i++;
+    setTimeout(() => {
+      typewriter.innerHTML += `<span class="smaller-text"></span>`;
+      typeNextPart(1);
+    }, 500);
+    setTimeout(() => {
+      typewriter.innerHTML += `<span class="smaller-text"></span>`;
+      typeNextPart(2);
+    }, 2000);
+  }
 }
 
 function typeNextPart(a) {
-    let j = 0;
-    function type() {
-        if (j < text[a].length) {
-            const smallerText = typewriter.querySelector('.smaller-text');
-            smallerText.textContent += text[a].charAt(j);
-            j++;
-            setTimeout(type, 50);
-        }
+  let j = 0;
+  function type() {
+    if (j < text[a].length) {
+      const smallerText = typewriter.querySelector(".smaller-text");
+      smallerText.textContent += text[a].charAt(j);
+      j++;
+      setTimeout(type, 50);
     }
-    type();
+  }
+  type();
 }
 
 function scrollToContent() {
-    const content = document.querySelector('main');
-    content.scrollIntoView({ behavior: 'smooth' });
+  const content = document.querySelector("main");
+  content.scrollIntoView({ behavior: "smooth" });
 }
 
 // Start the typewriter effect when page loads
-typeWriter()
+typeWriter();
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
     });
+  });
 });
 
-window.addEventListener('beforeprint', () => {
-    document.querySelectorAll('.js-hide-on-print').forEach(el => {
-      el.classList.add('hide-on-print');
-    });
+window.addEventListener("beforeprint", () => {
+  document.querySelectorAll(".js-hide-on-print").forEach((el) => {
+    el.classList.add("hide-on-print");
   });
-  
-  window.addEventListener('afterprint', () => {
-    document.querySelectorAll('.js-hide-on-print').forEach(el => {
-      el.classList.remove('hide-on-print');
-    });
+  document.querySelectorAll(".js-show-on-print").forEach((el) => {
+    el.classList.add("show-on-print");
   });
+});
+
+window.addEventListener("afterprint", () => {
+  document.querySelectorAll(".js-hide-on-print").forEach((el) => {
+    el.classList.remove("hide-on-print");
+  });
+  document.querySelectorAll(".js-show-on-print").forEach((el) => {
+    el.classList.remove("show-on-print");
+  });
+});
