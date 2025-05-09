@@ -56,7 +56,7 @@
                             <i class="fas fa-file-alt"></i> Download Résumé
                         </a> -->
               <h1>Ali Moshkinfaam</h1>
-              <span> Software Developer</span>
+              <span> Software Engineer</span>
             </div>
             <ul class="social">
               <li>
@@ -98,7 +98,7 @@
                 <div class="job-title">Front-End Engineer</div>
                 <ul>
                   <li>
-                    Increased Lighthouse Score by ~25 with practices like
+                    Increased Lighthouse Score by ~15 with practices like
                     extracting and adding critical CSS to index.html (INP/FID),
                     creating styled component CSS files at build time,
                     customizing chunk sizes in Webpack & Rspack, and lazy
@@ -156,13 +156,34 @@
                 <div class="job-title">Front-End Engineer</div>
                 <ul>
                   <li>
-                    Increased MyPishro platform UX by: 1. Finding extra
-                    re-renders using React DevTools and then using memoization
-                    techniques and the useCallback hook to massively reduce the
-                    number of re-renders in large stock market tables and
-                    charts. 2. Uploading JS assets to MinIO and splitting large
-                    chunks into smaller ones, as the bundle size was too big due
-                    to graph and table packages used in stock market projects.
+                    Increased Lighthouse performance scores of several company
+                    applications by approximately 25–40 points through a range
+                    of optimization techniques—ranging from simple fixes like
+                    setting fixed dimensions for banners to improve CLS, to
+                    advanced strategies such as splitting heavy charts and table
+                    data into chunks (each taking ≤50ms to process) and
+                    processing them using requestIdleCallback, or leveraging
+                    service workers and offloading work from the main thread
+                    using Comlink where possible.
+                  </li>
+                  <li>
+                    Enhanced the performance & UX on the MyPishro platform by:
+                    <ul>
+                      <li>
+                        Identifying unnecessary re-renders using React DevTools
+                        and implementing memoization techniques, along with the
+                        useCallback hook, to significantly reduce re-renders in
+                        large stock market tables and charts.
+                      </li>
+                      <li>
+                        Uploading assets to MinIO and customizing the
+                        cache-control HTTP header for images and icons that
+                        rarely change. Additionally, I optimized bundle size by
+                        splitting large chunks into smaller ones, addressing
+                        issues caused by the bulky graph and table packages used
+                        in the stock market projects.
+                      </li>
+                    </ul>
                   </li>
                   <li>
                     Implemented a monorepo & atomic design system for all React
@@ -217,9 +238,10 @@
                     app analytics features without an internet connection.
                   </li>
                   <li>
-                    Replaced the state management store of the Optionz platform
-                    with Jotai, as the previous implementation was bloated with
-                    bad code and bugs that made the app unusable.
+                    Revived a previously unusable React app that was plagued by
+                    buggy state management. Leveraged the atomic nature of Jotai
+                    to gradually replace parts of the Redux store, eventually
+                    removing it entirely.
                   </li>
                   <li>
                     Defined a coding convention with the help of other
