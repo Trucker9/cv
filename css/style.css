@@ -211,16 +211,6 @@ section {
   font-weight: 500;
   margin-bottom: 0px;
 }
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.container {
-  max-width: 90%;
-}
 
 .contact-form {
   padding-top: 5px;
@@ -255,9 +245,35 @@ footer {
   .right-side {
     border-top: 1px solid #393e46;
   }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   [role="progressbar"] {
     --size: 100px;
   }
+
+  .left-side {
+    padding: 0 1rem;
+  }
+  .profile img {
+    max-width: 40%;
+  }
+}
+
+.link-to-resume {
+  display: none;
+  color: white;
+  font-size: 15px;
+  border: 1px solid red;
+  padding: 5px 0;
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+.link-to-resume a {
+  color: blue;
+  text-decoration: underline;
 }
 
 @media (min-width: 992px) {
@@ -325,4 +341,13 @@ footer {
   content: counter(percentage) "%";
   font-size: calc(var(--size) / 5);
   color: var(--primary);
+}
+
+@media print {
+  .hide-on-print {
+    display: none !important;
+  }
+  .show-on-print {
+    display: block;
+  }
 }

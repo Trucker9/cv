@@ -36,7 +36,7 @@
   </head>
 
   <body>
-    <section class="landing">
+    <section class="landing js-hide-on-print">
       <h2 style="font-size: 72px">Hi,</h2>
       <div class="typewriter" id="typewriter"></div>
       <button class="scroll-btn" onclick="scrollToContent()">
@@ -47,7 +47,13 @@
       <h1 style="opacity: 0">Ali Moshkinfam Ali Moshkinfaam</h1>
       <div class="row">
         <div class="col-lg-3 left-side">
-          <header>
+          <h1 class="link-to-resume show-on-print">
+            Please View my full portfolio and interactive resume at:
+            <a href="https://trucker9.github.io/cv/">
+              https://trucker9.github.io/cv/
+            </a>
+          </h1>
+          <header class="header">
             <div class="profile">
               <div class="picture">
                 <img src="img/avatar.png" alt="Avatar" />
@@ -55,29 +61,52 @@
               <h1>Ali MoshkinFaam</h1>
               <span> Software Engineer</span>
             </div>
-            <ul class="social">
-              <li>
-                <i class="fas fa-envelope"></i>
-                <span id="email"><a href="#">meshkin@aut.ac.ir</a></span>
-              </li>
-              <li>
-                <i class="fab fa-telegram"></i>
-                <a href="https://t.me/meshkin">@meshkin</a>
-              </li>
-              <!-- <li><i class="fab fa-linkedin"></i> <a href="#">John Doe</a></li>
-                        <li><i class="fas fa-pencil-alt"></i> <a href="#">Blog</a></li> -->
-            </ul>
+            <div>
+              <ul class="social">
+                <li>
+                  <i class="fa fa-mobile" aria-hidden="true"></i>
+                  <a href="tel:+989106008858"> +98 910 600 8858</a>
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i>
+                  <span id="email"><a href="#">meshkin@aut.ac.ir</a></span>
+                </li>
+                <li>
+                  <i class="fab fa-telegram"></i>
+                  <a href="https://t.me/meshkin">@meshkin</a>
+                </li>
+              </ul>
 
-            <p>
-              I'm a dude, doing web stuff for over 5 years, I like to solve
-              problems, that's it.
-            </p>
-            <p>I prefer broad knowledge over deep.</p>
+              <p>
+                I'm a dude, doing web stuff for over 5 years, I like to solve
+                problems, that's it.
+              </p>
+              <p>I prefer broad knowledge over deep.</p>
+            </div>
           </header>
         </div>
 
         <div class="col-lg-8 right-side">
           <article>
+            <section>
+              <h2 class="section-title">
+                <span class="fa-stack fa-xs">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                </span>
+                Education
+              </h2>
+
+              <div class="school">
+                <div class="upper-row">
+                  <h3 class="school-name">Amir Kabir University of Tehran</h3>
+                  <div class="time">Graduation - Dec. 2025</div>
+                </div>
+                <div class="school-title">
+                  B.S. Computer Science, GPA 18.32 / 20.00
+                </div>
+              </div>
+            </section>
             <section>
               <h2 class="section-title">
                 <span class="fa-stack fa-xs">
@@ -92,7 +121,7 @@
                   <h3 class="company">Snapp! Market</h3>
                   <div class="time">03/1403 – Present | ~ 1yr</div>
                 </div>
-                <div class="job-title">Front-End Engineer</div>
+                <div class="job-title">Senior Front-End Engineer</div>
                 <ul>
                   <li>
                     Increased Lighthouse Score by ~15 with practices like
@@ -198,11 +227,11 @@
                   <li>
                     Solely designed and developed PishrunFund end-to-end
                     investment platforms using Next.js 14, handling both
-                    frontend and backend. Used MongoDB, cached frequently
-                    requested charts in Redis, and used MinIO for user file
-                    uploads. Containerized the entire application with Docker to
-                    enable single-command deployment in CI using GitLab’s DID
-                    method.
+                    frontend and backend. Used MongoDB to implement a CashFlow
+                    Model for IPG payments, cached frequently requested charts
+                    in Redis, and used MinIO for user file uploads.
+                    Containerized the entire application with Docker to enable
+                    single-command deployment in CI using GitLab’s DID method.
                   </li>
                   <li>
                     Solely Designed and developed the PishroBroker company
@@ -277,8 +306,8 @@
 
                   <li>
                     Migrated an old CRM/ORM platform from a minimal front end
-                    (built with PHP Yii2) to a full React project. Used Material
-                    UI and atomic design for faster development.
+                    (built with PHP Yii2) to a full React project. Used antD for
+                    faster development.
                   </li>
 
                   <li>
@@ -302,8 +331,8 @@
                   </li>
                   <li>Learned React</li>
                   <li>
-                    Learned React and Next.js and contributed to back office
-                    react project.
+                    Learned express.js and Next.js and contributed to back
+                    office project.
                   </li>
                 </ul>
               </div>
@@ -376,7 +405,7 @@
                 ></div>
               </div>
             </section> -->
-            <section>
+            <section class="js-hide-on-print">
               <h2 class="section-title">
                 <span class="fa-stack fa-xs">
                   <i class="fas fa-circle fa-stack-2x"></i>
@@ -551,7 +580,7 @@
               </div>
             </section>
           </article>
-          <footer>
+          <footer class="js-hide-on-print">
             <small>
               <a href="https://github.com/trucker9/cv" target="_blank">
                 Ali Moshkinfaam's CV</a

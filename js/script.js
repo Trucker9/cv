@@ -47,3 +47,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+window.addEventListener('beforeprint', () => {
+    document.querySelectorAll('.js-hide-on-print').forEach(el => {
+      el.classList.add('hide-on-print');
+    });
+  });
+  
+  window.addEventListener('afterprint', () => {
+    document.querySelectorAll('.js-hide-on-print').forEach(el => {
+      el.classList.remove('hide-on-print');
+    });
+  });
