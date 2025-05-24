@@ -355,3 +355,7 @@ footer {
     display: block;
   }
 }
+
+code {
+color: white;
+}
