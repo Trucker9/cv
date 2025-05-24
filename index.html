@@ -124,59 +124,80 @@
                 <div class="job-title">Senior Front-End Engineer</div>
                 <ul>
                   <li>
-                    Increased Lighthouse Score by ~15 with practices like
-                    extracting and adding critical CSS to index.html (INP/FID),
-                    creating styled component CSS files at build time,
-                    customizing chunk sizes in Webpack & Rspack, and lazy
-                    loading all components via a loadable utility (TBT).
+                    Engineered a
+                    <strong
+                      >~15-point uplift in Lighthouse performance scores</strong
+                    >
+                    by implementing critical CSS inlining (optimizing INP/FID),
+                    generating styled-component CSS files at build-time,
+                    strategically customizing Webpack &amp; Rspack chunking, and
+                    orchestrating comprehensive lazy loading of components via a
+                    custom loadable utility (enhancing TBT).
                   </li>
                   <li>
-                    Added SSR in React As requested by the Marketing team, for
-                    certain pages for the Googlebot user agent to optimize SEO.
-                    This involved fetching data on the server and then hydrating
-                    the Redux store on the client.
+                    Spearheaded the
+                    <strong
+                      >implementation of Server-Side Rendering (SSR) with
+                      React</strong
+                    >
+                    for key marketing pages, directly addressing SEO
+                    optimization requirements from the Marketing team. This
+                    involved architecting server-side data fetching and Redux
+                    store hydration on the client-side to improve Googlebot
+                    indexing.
                   </li>
                   <li>
-                    Used event-driven architecture to design a listener
-                    component for dispatched custom events, sending them to
-                    Elastic APM-RUM during browser idle time. This reduced
-                    clutter in the React code, utilized idle time, and freed up
-                    the main thread.
+                    Architected and deployed an
+                    <strong>event-driven listener component</strong> leveraging
+                    custom events, integrated with Elastic APM-RUM for
+                    asynchronous data transmission during browser idle periods.
+                    This initiative significantly decluttered React components,
+                    optimized resource utilization, and preserved main thread
+                    responsiveness.
                   </li>
                   <li>
-                    Improved the crash-free rate by 0.8% (from 99.1% to 99.9%)
-                    by replacing Elastic APM-RUM with Sentry and configuring it
-                    to send alerts to the team when an issue regresses in
-                    different builds.
+                    Elevated application stability, achieving a
+                    <strong
+                      >0.8% improvement in the crash-free rate (from 99.1% to
+                      99.9%)</strong
+                    >, by strategically migrating from Elastic APM-RUM to Sentry
+                    and configuring robust, regression-focused alerting
+                    mechanisms for proactive issue identification across builds.
                   </li>
                   <li>
-                    Utilized Orval to organize API data and reduced optional
-                    chaining in the code by collecting Swagger documentation,
-                    even for old APIs, from backend developers and organizing
-                    them for input into Orval to generate fully-typed React
-                    Query hooks as output.
+                    Pioneered the adoption of
+                    <strong>Orval for streamlined API data management</strong>,
+                    meticulously curating and consolidating Swagger
+                    documentation (including legacy APIs) from backend teams to
+                    generate fully-typed React Query hooks. This significantly
+                    reduced optional chaining and enhanced code maintainability.
                   </li>
                   <li>
-                    Implemented Continuous Testing by collaborating with a
-                    professional test engineer to extract user actions, create
-                    test scenarios by applying actions in sequence, covering
-                    edge cases, and creating an E2E testing project using
-                    Playwright. This project was then deployed to run after each
-                    build in the CI to check the release for potential bugs.
+                    Championed and implemented
+                    <strong>Continuous Testing methodologies</strong> in
+                    collaboration with a dedicated test engineer. This involved
+                    defining critical user flows, developing comprehensive E2E
+                    test scenarios with Playwright covering edge cases, and
+                    integrating this automated testing suite into the CI/CD
+                    pipeline to proactively identify and mitigate release bugs.
                   </li>
                   <li>
-                    Increased the conversion rate of users by 50% who were
-                    initially predicted—based on behavior analysis using Elastic
-                    APM-RUM user tracking—to be unlikely to make a purchase, by
-                    first monitoring their in-app behavior, then triggering a
-                    modal offering a voucher code via MQTT over WebSocket using
-                    EMQX.
+                    Drove a <strong>50% conversion rate increase</strong> among
+                    at-risk user segments (identified via Elastic APM-RUM
+                    behavioral analytics) by designing and implementing a
+                    real-time intervention strategy. This involved monitoring
+                    in-app behavior and triggering targeted voucher code modals
+                    via MQTT over WebSocket (EMQX).
                   </li>
                   <li>
-                    Used the Design for Manufacturability (DFM) principle to
-                    communicate with designers in order to stay aligned and
-                    deliver a suitable design system that can be used by other
-                    developers.
+                    Fostered cross-functional alignment by applying
+                    <strong
+                      >Design for Manufacturability (DFM) principles</strong
+                    >
+                    in collaborations with the design team. This ensured the
+                    development and delivery of a scalable and maintainable
+                    design system, enhancing developer productivity and
+                    consistency across the platform.
                   </li>
                 </ul>
               </div>
@@ -189,107 +210,125 @@
                 <div class="job-title">Front-End Engineer</div>
                 <ul>
                   <li>
-                    Increased Lighthouse performance scores of several company
-                    applications by approximately 25–40 points through a range
-                    of optimization techniques—ranging from simple fixes like
-                    setting fixed dimensions for banners to improve CLS, to
-                    advanced strategies such as splitting heavy charts and table
-                    data into chunks (each taking ≤50ms to process) and
-                    processing them using requestIdleCallback, or leveraging
-                    service workers and offloading work from the main thread
-                    using Comlink where possible.
+                    Engineered significant Lighthouse performance enhancements
+                    across multiple company applications, achieving
+                    <strong>25–40 point improvements</strong>. This involved a
+                    spectrum of optimizations, from foundational CLS fixes
+                    (e.g., fixed banner dimensions) to advanced strategies like
+                    chunking heavy chart/table data (processed under 50ms via
+                    <code>requestIdleCallback</code>) and leveraging service
+                    workers with Comlink for off-main-thread processing.
                   </li>
                   <li>
-                    Enhanced the performance & UX on the MyPishro platform by:
+                    Systematically improved performance and UX on the MyPishro
+                    platform by:
                     <ul>
                       <li>
-                        Identifying unnecessary re-renders using React DevTools
-                        and implementing memoization techniques, along with the
-                        useCallback hook, to significantly reduce re-renders in
-                        large stock market tables and charts.
+                        Proactively identifying and rectifying unnecessary
+                        re-renders using React DevTools, applying strategic
+                        memoization (<code>React.memo</code>,
+                        <code>useMemo</code>, <code>useCallback</code>) to
+                        optimize large-scale stock market tables and charts.
                       </li>
                       <li>
-                        Uploading assets to MinIO and customizing the
-                        cache-control HTTP header for images and icons that
-                        rarely change. Additionally, I optimized bundle size by
-                        splitting large chunks into smaller ones, addressing
-                        issues caused by the bulky graph and table packages used
-                        in the stock market projects.
+                        Optimizing asset delivery via MinIO with customized
+                        cache-control headers for static assets, and
+                        significantly reducing bundle sizes by strategically
+                        splitting large chunks, mitigating issues from heavy
+                        charting/table libraries.
                       </li>
                     </ul>
                   </li>
                   <li>
-                    Implemented a monorepo & atomic design system for all React
-                    applications to ensure consistency across company projects.
-                    Used npm/changesets to version the UI packages and publish
-                    them to GitLab for use by other developers.
+                    Spearheaded the architecture and implementation of a
+                    <strong>monorepo and atomic design system</strong> across
+                    all React applications, ensuring UI/UX consistency and
+                    reusability. Managed versioning and publication of UI
+                    packages to GitLab using npm/changesets for streamlined
+                    developer consumption.
                   </li>
                   <li>
-                    Found the cause of 1000 unexpected user exits by
-                    implementing a custom RUM (Real User Monitoring) system that
-                    tracked client-side errors and stored them in MongoDB.
-                    Discovered that some chart libraries were failing under
-                    heavy load inputted by stock exchange core.
+                    Developed and deployed a
+                    <strong>custom Real User Monitoring (RUM) system</strong> to
+                    track client-side errors (stored in MongoDB), successfully
+                    identifying the root cause of over 1,000 unexpected user
+                    exits linked to chart library failures under heavy load from
+                    the stock exchange core.
                   </li>
                   <li>
-                    Solely designed and developed PishrunFund end-to-end
-                    investment platforms using Next.js 14, handling both
-                    frontend and backend. Used MongoDB to implement a CashFlow
-                    Model for IPG payments, cached frequently requested charts
-                    in Redis, and used MinIO for user file uploads.
-                    Containerized the entire application with Docker to enable
-                    single-command deployment in CI using GitLab’s DID method.
+                    Led the
+                    <strong
+                      >end-to-end design, development, and deployment of the
+                      PishrunFund investment platform</strong
+                    >
+                    (Next.js 14), encompassing both frontend and backend
+                    components. Engineered a CashFlow Model in MongoDB for IPG
+                    payments, implemented Redis caching for frequently requested
+                    chart data, utilized MinIO for user file uploads, and
+                    containerized the application with Docker for single-command
+                    CI/CD deployment via GitLab DID.
                   </li>
                   <li>
-                    Solely Designed and developed the PishroBroker company
-                    website using Next.js 13's new App Router shortly after its
-                    release. Implemented SSG for news pages, RSC and Server
-                    Actions and Mutations for interactive pages and sign-up
-                    functionality, ISR for stock tables and chart updates, and
-                    SSG for static pages such as company branches.
+                    Pioneered the adoption of Next.js 13's App Router
+                    post-release for the PishroBroker company website.
+                    Implemented a hybrid rendering strategy:
+                    <strong
+                      >SSG for news, RSC and Server Actions/Mutations for
+                      interactive pages/sign-up, ISR for dynamic stock data, and
+                      SSG for static content</strong
+                    >
+                    like company branch pages.
                   </li>
                   <li>
-                    Reduced friction between developers and non-technical
-                    stakeholders by implementing Server-Driven Design (SDD) in
-                    the MyPishro project. Stakeholders could update website
-                    sections via a simple dashboard connected to a NestJS
-                    backend, which returned JSON indicating which atomic design
-                    molecule to render. The system was scalable across all
-                    company projects thanks to a shared monorepo design system.
+                    Architected and implemented a
+                    <strong>Server-Driven Design (SDD) system</strong> for the
+                    MyPishro project, significantly reducing friction between
+                    developers and non-technical stakeholders. This enabled
+                    content updates via a NestJS backend and a simple dashboard,
+                    dynamically rendering atomic design components based on JSON
+                    responses, ensuring scalability across projects through the
+                    shared monorepo design system.
                   </li>
                   <li>
-                    Maintained a real-time trading platform built with Vue 3 for
-                    enhanced performance. Integrated the legacy stock exchange
-                    core system and live data using LightstreamerJS, updated
-                    stock prices via WebSocket, enabled buy/sell orders, and
-                    used Framer Motion to enhance UX with smooth animations.
+                    Contributed to the maintenance and enhancement of a
+                    high-performance, real-time trading platform (Vue 3).
+                    Successfully integrated a legacy stock exchange core system
+                    and live data feeds using LightstreamerJS, managed real-time
+                    stock price updates via WebSockets, implemented order
+                    functionalities, and enhanced UX with Framer Motion
+                    animations.
                   </li>
                   <li>
-                    Added service worker and caching using Workbox for PWA
-                    offline support. Used Ionic and Capacitor to generate
-                    Android (APK) and iOS (IPA) builds, enabling users to access
-                    app analytics features without an internet connection.
+                    Implemented robust
+                    <strong>PWA capabilities, including offline support</strong>
+                    using service workers and Workbox. Utilized Ionic and
+                    Capacitor to generate native Android (APK) and iOS (IPA)
+                    builds, enabling users to access critical app analytics
+                    features offline.
                   </li>
                   <li>
-                    Revived a previously unusable React app that was plagued by
-                    buggy state management. Leveraged the atomic nature of Jotai
-                    to gradually replace parts of the Redux store, eventually
-                    removing it entirely.
+                    Successfully refactored and revitalized a critical,
+                    previously unstable React application by strategically
+                    migrating from a problematic Redux store to Jotai,
+                    leveraging its atomic nature for a gradual and successful
+                    state management overhaul.
                   </li>
                   <li>
-                    Defined a coding convention with the help of other
-                    developers and Airbnb’s code style guide. Created ESLint and
-                    Stylelint configurations, along with an EditorConfig file,
-                    to ensure all company projects follow consistent rules.
+                    Led the initiative to define and enforce company-wide coding
+                    standards, collaborating with developers to establish
+                    conventions based on Airbnb’s style guide. Developed and
+                    implemented shared ESLint, Stylelint, and EditorConfig
+                    configurations to ensure code consistency and quality across
+                    all projects.
                   </li>
                 </ul>
               </div>
 
-              <div style="margin-top: 10px" class="job">
+              <div style="margin-top: 10px; margin-bottom: -15px" class="job">
                 <div class="upper-row">
-                  <h3 class="company">Bahar Net</h3>
+                  <h3 class="company">Mobin Net</h3>
                   <div class="time">
-                    02/1400 – 01/1401 (Apr 2021 – Mar 2022) | 1 yr
+                    02/1400 – 01/1401 (Apr 2021 – Mar 2022) | 1 yr 6 mo
                   </div>
                 </div>
                 <div class="job-title">Front-End Developer</div>
@@ -320,26 +359,6 @@
                   <li>
                     Improved my JavaScript skills beyond the company's tech
                     stack during my free time.
-                  </li>
-                </ul>
-              </div>
-
-              <div class="job" style="margin-bottom: -15px">
-                <div class="upper-row">
-                  <h3 class="company">Ahan Online</h3>
-                  <div class="time">
-                    02/1398 – 08/1398 (Apr 2019 – Oct 2019) | 6 mo
-                  </div>
-                </div>
-                <div class="job-title">Front-End Intern</div>
-                <ul>
-                  <li>
-                    Learned fundamentals of HTML, CSS, JS, and UI development
-                  </li>
-                  <li>Learned React</li>
-                  <li>
-                    Learned express.js and Next.js and contributed to back
-                    office project.
                   </li>
                 </ul>
               </div>
