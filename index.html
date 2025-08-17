@@ -119,7 +119,7 @@
               <div class="job">
                 <div class="upper-row">
                   <h3 class="company">Snapp! Market</h3>
-                  <div class="time">03/1403 – Present | ~ 1yr</div>
+                  <div class="time">05/1403 – Present | ~ 1yr</div>
                 </div>
                 <div class="job-title">Senior Front-End Engineer</div>
                 <ul>
@@ -136,7 +136,7 @@
                     (enhancing TBT).
                   </li>
                   <li>
-                    Spearheaded the
+                    Participated in the
                     <strong
                       >implementation of Server-Side Rendering (SSR) with
                       React</strong
@@ -146,6 +146,14 @@
                     involved architecting server-side data fetching and Redux
                     store hydration on the client-side to improve Googlebot
                     indexing.
+                  </li>
+                  <li>
+                    Improved user experience by
+                    <strong> reducing network usage</strong> through batching
+                    and sending APM RUM events. Benchmarked compression methods
+                    and batching strategies, then implemented a backend proxy to
+                    handle requests, decompress them, and forward them
+                    individually to the final gateway.
                   </li>
                   <li>
                     Architected and deployed an
@@ -165,16 +173,16 @@
                     and configuring robust, regression-focused alerting
                     mechanisms for proactive issue identification across builds.
                   </li>
-                  <li>
+                  <!-- <li>
                     Pioneered the adoption of
                     <strong>Orval for streamlined API data management</strong>,
                     meticulously curating and consolidating Swagger
                     documentation (including legacy APIs) from backend teams to
                     generate fully-typed React Query hooks. This significantly
                     reduced optional chaining and enhanced code maintainability.
-                  </li>
+                  </li> -->
                   <li>
-                    Championed and implemented
+                    Implemented
                     <strong>Continuous Testing methodologies</strong> in
                     collaboration with a dedicated test engineer. This involved
                     defining critical user flows, developing comprehensive E2E
@@ -194,13 +202,13 @@
                     Developed Alfred, a
                     <strong>real-time AI-powered chat app</strong> for product
                     discovery and purchase, using WebSockets for live
-                    communication with LLMs, Framer Motion for advanced
-                    animations, and ensured cross-platform
+                    communication with LLM on the nextJS backend side, Framer
+                    Motion for advanced animations, and ensured cross-platform
                     compatibility—including smooth iframe integration with Snapp
                     Market via postMessage and Safari/iOS support verified
                     through BrowserStack.
                   </li>
-                  <li>
+                  <!-- <li>
                     Fostered cross-functional alignment by applying
                     <strong
                       >Design for Manufacturability (DFM) principles</strong
@@ -209,6 +217,31 @@
                     development and delivery of a scalable and maintainable
                     design system, enhancing developer productivity and
                     consistency across the platform.
+                  </li> -->
+
+                  <li>
+                    Enhanced system observability by integrating<strong>
+                      Lighthouse performance tests into the CI pipeline</strong
+                    >, where a Docker container automatically runs Lighthouse
+                    test on each newly deployed version and pushes the results
+                    to Prometheus Pushgateway, enabling the visualization of key
+                    performance metrics per release in Grafana
+                  </li>
+                  <li>
+                    Introduced <strong>ScrumBan</strong> practices to a
+                    front-end chapter team (5 developers and a chapter lead)
+                    that previously lacked a structured framework. I taught the
+                    team Kanban principles, implemented a customized board in
+                    Jira, and refined processes through regular retrospectives.
+                    These efforts improved the team's workflow and established a
+                    monthly reporting system for completed tasks, bringing
+                    clarity and accountability to their work.
+                    <strong
+                      >Organized and facilitated chapter community
+                      sessions</strong
+                    >, encouraging colleagues to share knowledge and present on
+                    various topics to strengthen the team’s collective
+                    expertise.
                   </li>
                 </ul>
               </div>
@@ -218,8 +251,21 @@
                   <h3 class="company">Pishro Broker</h3>
                   <div class="time">09/1400 – 03/1403 | 2 yr 5 mo</div>
                 </div>
-                <div class="job-title">Front-End Engineer</div>
+                <div class="job-title">Software Engineer</div>
                 <ul>
+                  <li>
+                    Led the
+                    <strong
+                      >end-to-end design, development, and deployment of the
+                      PishrunFund investment platform</strong
+                    >
+                    (Next.js 14), encompassing both frontend and backend
+                    components. Engineered a CashFlow Model in MongoDB for IPG
+                    payments, implemented Read-Through Redis caching for ,
+                    utilized MinIO for user file uploads, and containerized the
+                    application with Docker for single-command CI/CD deployment
+                    via GitLab DID.
+                  </li>
                   <li>
                     Engineered significant Lighthouse performance enhancements
                     across multiple company applications, achieving
@@ -266,19 +312,7 @@
                     exits linked to chart library failures under heavy load from
                     the stock exchange core.
                   </li>
-                  <li>
-                    Led the
-                    <strong
-                      >end-to-end design, development, and deployment of the
-                      PishrunFund investment platform</strong
-                    >
-                    (Next.js 14), encompassing both frontend and backend
-                    components. Engineered a CashFlow Model in MongoDB for IPG
-                    payments, implemented Redis caching for frequently requested
-                    chart data, utilized MinIO for user file uploads, and
-                    containerized the application with Docker for single-command
-                    CI/CD deployment via GitLab DID.
-                  </li>
+
                   <li>
                     Pioneered the adoption of Next.js 13's App Router
                     post-release for the PishroBroker company website.
@@ -295,10 +329,10 @@
                     <strong>Server-Driven Design (SDD) system</strong> for the
                     MyPishro project, significantly reducing friction between
                     developers and non-technical stakeholders. This enabled
-                    content updates via a NestJS backend and a simple dashboard,
-                    dynamically rendering atomic design components based on JSON
-                    responses, ensuring scalability across projects through the
-                    shared monorepo design system.
+                    content updates via a Hexagonal NestJS backend and a simple
+                    dashboard, dynamically rendering atomic design components
+                    based on JSON responses, ensuring scalability across
+                    projects through the shared monorepo design system.
                   </li>
                   <li>
                     Contributed to the maintenance and enhancement of a
